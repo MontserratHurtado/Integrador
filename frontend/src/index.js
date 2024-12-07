@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Charts } from './Charts';
+import { Login } from './Login';
 
 const route = createBrowserRouter([
   {
@@ -15,7 +16,13 @@ const route = createBrowserRouter([
   {
     path: "/charts",
     element: <Charts/>
+  },
+
+  {
+    path: "/Login",
+    element: <Login/>
   }
+
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

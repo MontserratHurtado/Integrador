@@ -5,7 +5,7 @@ import { AnswerModel } from "./models/AnswersModel.js";
 import cors from "cors";
 import UserController from "./controllers/UserController.js";
 
-mongoose.connect("mongodb://localhost:27017/questionnairesFusion").then(() => {
+mongoose.connect("mongodb://localhost:27017/").then(() => {
     console.log("Conexion exitosa a la BD")
 })
 const app = express();
